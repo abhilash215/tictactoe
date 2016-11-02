@@ -82,31 +82,27 @@ class TicTacToeViewController: UIViewController {
             j=2
         }
         
-        
-        
-        
-        
         if((game.check == true) && (game.board[i][j] == 0))
         {
             count = count + 1
             if game.playerIdentity == 1{
             button.setTitle("X", forState: UIControlState.Normal)
-            //button.setTitleColor(UIColor.blackColor(), forState:  UIControlState.Normal)
+            button.setTitleColor(UIColor.blackColor(), forState:  UIControlState.Normal)
                 if(game.a == 0 && game.b == 1 && game.c == 2){
                     button.setTitleColor(UIColor.greenColor(), forState: UIControlState.Normal)
                 }
             }
             else if game.playerIdentity == 2{
             button.setTitle("0", forState: UIControlState.Normal)
-            //button.setTitleColor(UIColor.redColor(), forState:  UIControlState.Normal)
+           button.setTitleColor(UIColor.redColor(), forState:  UIControlState.Normal)
         }
         
         
         switch index{
         case 0:
-        game.board[0][0]=game.playerIdentity
-        game.changePlayer()
-        break
+            game.board[0][0]=game.playerIdentity
+            game.changePlayer()
+            break
         case 1:
             game.board[0][1]=game.playerIdentity
              game.changePlayer()
@@ -143,18 +139,16 @@ class TicTacToeViewController: UIViewController {
             print("default value")
         }
         
-        game.computeWinner()
+       // game.computeWinner()
         playeridforwinner=game.computeWinner()
         if(playeridforwinner==0 && game.check == false){
             gameOverWithWinner(nil)
         }
         else if((playeridforwinner == 1 || playeridforwinner == 2) && game.check == false)
         {
-           
-            if let button = self.view.viewWithTag(0) as? UIButton
-            {
-                button.setTitleColor(UIColor.greenColor(), forState: UIControlState.Normal)
-            }
+            buttons[game.a].setTitleColor(UIColor.greenColor(), forState: UIControlState.Normal)
+            buttons[game.b].setTitleColor(UIColor.greenColor(), forState: UIControlState.Normal)
+            buttons[game.c].setTitleColor(UIColor.greenColor(), forState: UIControlState.Normal)
              gameOverWithWinner(playeridforwinner)
         }
            
@@ -165,7 +159,6 @@ class TicTacToeViewController: UIViewController {
             }
         }
     }
-    
     
     //gameOverWithWinner(playerID: Int?) will need to be invoked when the game is over with the identity of
     //the winning player. If there is no winner, the function is called with nil (i.e., the function takes as input an Optional Int).
