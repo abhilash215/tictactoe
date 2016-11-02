@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C0EA7231DC90CF700C862D0 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 4C0EA7221DC90CF700C862D0 /* Contents.json */; };
 		4C98D3C41DC1225300FF985F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C98D3C31DC1225300FF985F /* ViewController.swift */; };
 		AEE7247A1DB331E800D3C23E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE724791DB331E800D3C23E /* AppDelegate.swift */; };
 		AEE7247F1DB331E900D3C23E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEE7247D1DB331E900D3C23E /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C0EA7221DC90CF700C862D0 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Contents.json; path = ../../TicTacToe_HD_iTunesArtwork/ios/AppIcon.appiconset/Contents.json; sourceTree = "<group>"; };
 		4C98D3C31DC1225300FF985F /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../../../projects/GameZ/GameZ/ViewController.swift; sourceTree = "<group>"; };
 		AEE724761DB331E800D3C23E /* GameZ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameZ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEE724791DB331E800D3C23E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				AEE724911DB333BA00D3C23E /* TicTacToeBrain.swift */,
 				AEE7247D1DB331E900D3C23E /* Main.storyboard */,
 				AEE724801DB331E900D3C23E /* Assets.xcassets */,
+				4C0EA7221DC90CF700C862D0 /* Contents.json */,
 				AEE724851DB331E900D3C23E /* Info.plist */,
 			);
 			path = GameZ;
@@ -127,6 +130,7 @@
 			files = (
 				AEE724811DB331E900D3C23E /* Assets.xcassets in Resources */,
 				AEE7247F1DB331E900D3C23E /* Main.storyboard in Resources */,
+				4C0EA7231DC90CF700C862D0 /* Contents.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
